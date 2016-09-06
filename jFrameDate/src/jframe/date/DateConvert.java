@@ -101,7 +101,6 @@ class MyButton extends Frame implements ActionListener {
 					SimpleDateFormat sf = new SimpleDateFormat(
 							"yyyy-MM-dd HH:mm:ss");
 					Date dateS = new Date(slong);
-					//l.setText(sf.format(dateS));
 					tfResult.setText(sf.format(dateS));
 					System.out.println(sf.format(dateS));
 
@@ -111,7 +110,6 @@ class MyButton extends Frame implements ActionListener {
 							"yyyy-MM-dd HH:mm:ss");
 					Date TodaySDate = sf.parse(str);
 					long timeSToday = TodaySDate.getTime();
-					//l.setText(Long.toString(timeSToday));
 					tfResult.setText(Long.toString(timeSToday));
 					System.out.println(Long.toString(timeSToday));
 				}
